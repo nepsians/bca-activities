@@ -23,10 +23,13 @@ LoginActivity extends AppCompatActivity {
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Snackbar.make(view, "Button has been clicked!!!!!", Snackbar.LENGTH_SHORT).show();
+                Intent i = new Intent(LoginActivity.this, SignupActivity.class);
 
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-                startActivity(intent);
+                i.putExtra("name", "Nihal Shrestha");
+                i.putExtra("age", 25);
+                i.putExtra("email", "nihal.nepsian@gmail.com");
+
+                startActivity(i);
             }
         });
 

@@ -27,20 +27,27 @@ public class LoginActivity extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    String valueOne = editTextOne.getText().toString();
-                    String valueTwo = editTextTwo.getText().toString();
 
-                    if (valueOne.length() == 0 && valueTwo.length() == 0) {
-                        Snackbar.make(view, "Please enter numbers", Snackbar.LENGTH_LONG).show();
-                        return;
-                    }
+            }
+        });
 
-                    int result = Integer.parseInt(valueOne) + Integer.parseInt(valueTwo);
-                    resultTv.setText("Result: " + result);
-                } catch (Exception e) {
-                    Log.d("error", "" + e);
-                }
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                try {
+//                    String valueOne = editTextOne.getText().toString();
+//                    String valueTwo = editTextTwo.getText().toString();
+//
+//                    if (valueOne.length() == 0 && valueTwo.length() == 0) {
+//                        Snackbar.make(view, "Please enter numbers", Snackbar.LENGTH_LONG).show();
+//                        return;
+//                    }
+//
+//                    int result = Integer.parseInt(valueOne) + Integer.parseInt(valueTwo);
+//                    resultTv.setText("Result: " + result);
+//                } catch (Exception e) {
+//                    Log.d("error", "" + e);
+//                }
             }
         });
     }

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MultipleActivity</string>
+    <string name="program">Program:</string>
+
+    <string-array name="spinner_items">
+        <item>BCA</item>
+        <item>BSCIT</item>
+        <item>BIT</item>
+        <item>BBA</item>
+        <item>BIT</item>
+    </string-array>
 </resources>
